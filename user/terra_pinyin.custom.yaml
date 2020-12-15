@@ -1,0 +1,66 @@
+patch:
+  "schema/description": |
+    「漢語拼音」，拼音碼表根據 CC-CEDICT 改編
+    将拼音輸入四聲改爲 7890 分別代表 1234 聲
+  "schema/author":
+    - 佛振 <chen.sst@gmail.com>
+    - 赤石君 <Toshiya14@live.jp>
+  "speller/alphabet": 'zyxwvutsrqponmlkjihgfedcba7890;,>'
+  "speller/algebra":
+    - erase/^xx$/
+    - xform/^r5$/er5/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ve/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui/uei/
+    - derive/iu/iou/
+    - derive/ao/oa/
+    - derive/([aeiou])ng/$1gn/
+    - derive/([iu])a(o|ng?)/a$1$2/
+    - derive/^([a-z]+)[0-5]$/$1/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - 'erase/^.*5$/'
+    - 'xlit 1234 7890'
+    - 'derive/^(.*)-$/$1;/'
+    - 'derive/^(.*)<$/$1,/'
+    - 'derive/^(.*)\\$/$1>/'
+  "translator/spelling_hints": 0
+  "translator/preedit_format":
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+    - xform/eh/ê/
+    - 'xform ([aeiou])(ng?|r)([7890]) $1$3$2'
+    - 'xform ([aeo])([iuo])([7890]) $1$3$2'
+    - 'xform a7 ā'
+    - 'xform a8 á'
+    - 'xform a9 ǎ'
+    - 'xform a0 à'
+    - 'xform e7 ē'
+    - 'xform e8 é'
+    - 'xform e9 ě'
+    - 'xform e0 è'
+    - 'xform o7 ō'
+    - 'xform o8 ó'
+    - 'xform o9 ǒ'
+    - 'xform o0 ò'
+    - 'xform i7 ī'
+    - 'xform i8 í'
+    - 'xform i9 ǐ'
+    - 'xform i0 ì'
+    - 'xform u7 ū'
+    - 'xform u8 ú'
+    - 'xform u9 ǔ'
+    - 'xform u0 ù'
+    - 'xform ü7 ǖ'
+    - 'xform ü8 ǘ'
+    - 'xform ü9 ǚ'
+    - 'xform ü0 ǜ'
+__patch:
+# Rx: emoji:customize:schema=terra_pinyin {
+  - patch/+:
+      __include: emoji_suggestion:/patch
+# }
