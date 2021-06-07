@@ -6,11 +6,13 @@ customization:
   rime_version: 1.5.3
 patch:
   "preset_color_schemes/ps4/back_color": 0x211C1C
-  "preset_color_schemes/ps4/border_color": 0x000000
-  "style/color_scheme": ps4
+  "preset_color_schemes/ps4/border_color": 0x222211
+  # "preset_color_schemes/youtube/back_color": 0xCCCCCC
+  # "preset_color_schemes/youtube/back_color": 0xCCCCCC
+  "style/color_scheme": youtube
   "style/horizontal": true
-  "style/font_face": "Inziu Iosevka SC Slab"
+  "style/font_face": "Inziu Roboto SC"
   "style/font_point": 12
-  "style/layout/spacing": 5
+  "style/layout/spacing": 10
   "style/layout/candidate_spacing": 15
-  
+  # "style/layout/border_width": 2

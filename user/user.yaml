@@ -1,0 +1,10 @@
+var:
+  last_build_time: 1608615600
+  option:
+    full_shape: false
+    simplification: true
+  previously_selected_schema: terra_pinyin
+  schema_access_time:
+    luna_pinyin: 1604301637
+    luna_pinyin_simp: 1608017446
+    terra_pinyin: 1608087688
