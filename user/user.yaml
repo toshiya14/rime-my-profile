@@ -1,10 +1,13 @@
 var:
-  last_build_time: 1608615600
+  last_build_time: 1640760501
   option:
     full_shape: false
     simplification: true
-  previously_selected_schema: terra_pinyin
+  previously_selected_schema: luna_pinyin_simp
   schema_access_time:
-    luna_pinyin: 1604301637
-    luna_pinyin_simp: 1608017446
+    bopomofo: 1639724311
+    double_pinyin_flypy: 1639728225
+    jyut6ping3: 1639724488
+    luna_pinyin: 1638342171
+    luna_pinyin_simp: 1641387772
     terra_pinyin: 1608087688
