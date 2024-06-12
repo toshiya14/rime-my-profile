@@ -1,3 +1,4 @@
 user/sync/
 user/build/
 *.userdb/
+**/.DS_Store

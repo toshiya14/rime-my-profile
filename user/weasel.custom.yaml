@@ -1,15 +1,26 @@
 customization:
   distribution_code_name: Weasel
-  distribution_version: 0.14.3
+  distribution_version: 0.15.0.0
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Wed Dec  1 15:02:03 2021"
-  rime_version: 1.5.3
+  modified_time: "Sun Dec 17 18:03:02 2023"
+  rime_version: 1.8.5
 patch:
-  "preset_color_schemes/ps4/back_color": 0x211C1C
-  "preset_color_schemes/ps4/border_color": 0x222211
-  "style/color_scheme": google
-  "style/font_face": "Sarasa UI SC"
-  "style/font_point": 12
-  "style/horizontal": true
-  "style/layout/candidate_spacing": 15
-  "style/layout/spacing": 10
+  style:
+    color_scheme: ps4
+    inline_preedit: true
+    preedit_type: composition
+    antialias_mode: cleartype
+    font_face: "EmojiOne:1f600, Microsoft YaHei UI"
+    font_point: 12
+    layout:
+      shadow_offset_x: 4
+      shadow_offset_y: 4
+      shadow_radius: 0
+      corner_radius: 4
+      round_corner: 4
+      margin_x: 10
+      margin_y: 10
+      spacing: 20
+      candidate_spacing: 10
+      min_width: 240
+      border_width: 8
